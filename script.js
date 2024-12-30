@@ -75,7 +75,7 @@ const projects = [
             es: "Un juego dinámico y entretenido desarrollado en Python, donde los jugadores deben identificar el logo correcto de una marca mostrada en pantalla.",
         },
         image: "images/Game.png",
-        link: "",
+        link: "images/gameplay.gif",
     },
 ];
 
@@ -122,6 +122,8 @@ projects.forEach((project) => {
 document.addEventListener("DOMContentLoaded", () => {
     const languageButton = document.getElementById("language-toggle");
     const downloadCVButton = document.getElementById("download-cv-btn");
+    const flagEs = document.getElementById("flag-es");
+    const flagEn = document.getElementById("flag-en");
     let currentLanguage = "es";
 
     // Toggle the language and update the CV download link
@@ -145,6 +147,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update the button text
         languageButton.textContent = currentLanguage.toUpperCase();
+
+        // Show the appropriate flag
+        if (currentLanguage === "en") {
+            flagEs.style.display = "none";
+            flagEn.style.display = "block";
+        } else {
+            flagEs.style.display = "block";
+            flagEn.style.display = "none";
+        }
     }
 
     // Initialize the language and CV link
