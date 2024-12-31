@@ -161,3 +161,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // Initialize the language and CV link
     updateLanguage();
 });
+
+
+
+// Manejo del menú hamburguesa
+// Elementos del navbar
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+// Función para manejar el estado del menú
+function toggleMenu(shouldClose = false) {
+    const method = shouldClose ? 'remove' : 'toggle';
+    hamburger.classList[method]('active');
+    navLinks.classList[method]('active');
+    document.body.classList[method]('no-scroll');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Click en hamburguesa
+    hamburger.addEventListener('click', () => toggleMenu());
+
+    // Click en enlaces
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => toggleMenu(true));
+    });
+});

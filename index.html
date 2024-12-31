@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Santi Locaso</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav class="navbar">
-        <ul>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
           <li>
             <a href="#about-me" data-en="About me" data-es="Sobre mí"
               >About me</a
+            >
+          </li>
+          <li>
+            <a href="#technologies" data-en="technologies" data-es="Tecnologias"
+              >technologies</a
             >
           </li>
           <li>
@@ -24,22 +34,22 @@
           <li>
             <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
           </li>
+          <div class="language-switcher">
+            <img
+              id="flag-es"
+              src="images/es-flag.png"
+              alt="Español"
+              class="flag-icon"
+            />
+            <img
+              id="flag-en"
+              src="images/en-flag.png"
+              alt="English"
+              class="flag-icon"
+            />
+            <button id="language-toggle" class="language-button">EN</button>
+          </div>
         </ul>
-        <div class="language-switcher">
-          <img
-            id="flag-es"
-            src="images/es-flag.png"
-            alt="Español"
-            class="flag-icon"
-          />
-          <img
-            id="flag-en"
-            src="images/en-flag.png"
-            alt="English"
-            class="flag-icon"
-          />
-          <button id="language-toggle" class="language-button">EN</button>
-        </div>
       </nav>
     </header>
 

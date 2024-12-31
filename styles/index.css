@@ -1,0 +1,39 @@
+@import './aboutme.css';
+@import './contact.css';
+@import './navbar.css';
+@import './project.css';
+@import './technologies.css';
+
+/* Estilo general */
+  html, body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .link-git{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-text a:hover{
+    color: #f0a500;
+  }
+
+  /* Proyectos y Contacto */
+  .projects,
+  .contact {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
