@@ -38,14 +38,14 @@ export function initProjects() {
         projectCard.innerHTML = `
             <img src="${project.image}" alt="${project.title.en}" class="project-image" />
             <h2 class="project-title" data-en="${project.title.en}" data-es="${project.title.es}">
-                ${project.title.en}
+                ${project.title.es}
             </h2>
             <p class="project-description" data-en="${project.description.en}" data-es="${project.description.es}">
-                ${project.description.en}
+                ${project.description.es}
             </p>
             ${project.link ? `
             <a href="${project.link}" target="_blank" class="project-link" data-en="View Project" data-es="Ver Proyecto">
-                View Project
+                Ver Proyecto
             </a>` : ''}
         `;
         container.appendChild(projectCard);
