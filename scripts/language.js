@@ -13,8 +13,8 @@ export function initLanguage() {
         });
 
         const cvLink = currentLanguage === "en"
-            ? "pdf/CVSantiagoLocasoTuriaci_EN.pdf"
-            : "pdf/CVSantiagoLocasoTuriaci_ES.pdf";
+            ? "pdf/CV Locaso Turiaci Santiago E.pdf"
+            : "pdf/CV Locaso Turiaci Santiago.pdf";
         downloadCVButton?.setAttribute("href", cvLink);
 
         languageButton.textContent = currentLanguage.toUpperCase();
