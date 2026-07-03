@@ -1,5 +1,14 @@
 const projects = [
     {
+        title: { en: "SpaceCalendar", es: "Calendario de lanzamientos" },
+        description: {
+            en: "Interactive space launch calendar that provides real-time updates on upcoming missions. It includes launch dates, schedules, space agencies, launch vehicles, and detailed mission information, offering a fast and intuitive way to stay informed about space activities worldwide.",
+            es: "Calendario interactivo de lanzamientos espaciales que muestra información actualizada en tiempo real sobre próximas misiones. Incluye fechas, horarios, agencias, vehículos de lanzamiento y detalles de cada evento, ofreciendo una forma rápida e intuitiva de seguir la actividad espacial mundial.",
+        },
+        image: "images/spacelaunches.png",
+        link: "https://calendariolanzamientosespaciales.vercel.app",
+    },
+    {
         title: { en: "Language school", es: "Escuela de idiomas" },
         description: {
             en: "Collaboratively developed a website for a language school using HTML, CSS, and JavaScript, focusing on modern design and user-friendly navigation.",

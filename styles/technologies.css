@@ -1,82 +1,60 @@
- /* Technologies */
- .technologies {
-  padding: 4rem 21rem;
+.technologies {
+  padding: 5rem 1rem;
   text-align: center;
-  background-color: #1C1C1C;
-}
-
-.technologies h1 {
-  font-size: 2.8rem;
-  margin-bottom: 5.5rem;
-  color: #00B0FF;
 }
 
 .technologies-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
+  width: min(980px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
 }
 
 .tech-item {
   text-align: center;
-  width: 140px;
-  padding: 1.5rem;
-  background-color: #2C3E50;
-  border-radius: 15px;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1.2rem 1rem;
+  background: rgba(30, 41, 59, 0.58);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
 
 .tech-item:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(30, 41, 59, 0.85);
 }
 
 .tech-icon {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 1.2rem;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 0.9rem;
+  object-fit: contain;
 }
 
 .tech-name {
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .tech-item p {
-  font-size: 1.1rem;
-  color: #E0E0E0;
+  font-size: 1rem;
+  color: var(--text);
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .technologies {
-    padding: 2rem 2rem;
-  }
-    
-  .technologies h1 {
-    font-size: 2rem;
-  }
-    
-  .tech-item {
-    width: 120px;
-    padding: 1rem;
-  }
-    
-  .tech-icon {
-    width: 50px;
-    height: 50px;
-  }
-}
-
 @media (max-width: 480px) {
-  .tech-item {
-    width: 100px;
+  .technologies {
+    padding: 4rem 1rem;
   }
-    
+
+  .technologies-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .tech-icon {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
   }
 }
